@@ -1,0 +1,1 @@
+export const TRANSACTION_FEE_IN_SATOSHIS = 500;

@@ -1,0 +1,25 @@
+{
+  "name": "liquidscriptions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamsii/liquidscriptions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsii/liquidscriptions/issues"
+  },
+  "homepage": "https://github.com/adamsii/liquidscriptions#readme",
+  "description": "",
+  "dependencies": {
+    "commander": "^14.0.0",
+    "cubic-spline": "^3.0.3",
+    "liquidjs-lib": "6.0.2-liquid.23",
+    "tiny-secp256k1": "^2.2.4"
+  }
+}
