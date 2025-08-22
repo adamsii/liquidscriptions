@@ -1,1 +1,2 @@
 export const TRANSACTION_FEE_IN_SATOSHIS = 500;
+export const CONTENT_TYPE_MARKER = "01";

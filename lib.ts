@@ -18,7 +18,7 @@ import {
   fileExtensionToHexMarker,
   generateInscriptionScriptFromFileHex,
 } from "./helpers";
-import { TRANSACTION_FEE_IN_SATOSHIS } from "./constants";
+import { CONTENT_TYPE_MARKER, TRANSACTION_FEE_IN_SATOSHIS } from "./constants";
 import { Network } from "liquidjs-lib/src/networks";
 import * as readline from "readline/promises";
 import { stdin as input, stdout as output } from "process";
@@ -68,6 +68,7 @@ export async function inscribe(
     inscriptionHex
   );
   const leafScript = script.fromASM(inscriptionAsm);
+  leafScript[41] = parseInt(CONTENT_TYPE_MARKER);
 
   // taproot tree & address
   const leaves = [{ scriptHex: leafScript.toString("hex") }];
